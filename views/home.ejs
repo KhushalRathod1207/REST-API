@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Post Display</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-box">
+        <h2>Instagram Posts</h2>
+
+        <% if (posts.length===0) { %>
+            <p style="text-align: center; font-size: 18px; color: gray;">No posts available. Create a new post!</p>
+            <% } else { %>
+                <% for(let post of posts) { %>
+                    <div class="post-container">
+                        <h5 class="id">ID: <%= post.id %>
+                        </h5>
+                        <h1 class="Uname">Username: <%= post.username %>
+                        </h1>
+                        <p class="content">
+                            <%= post.content %>
+                        </p>
+                        <a href="http://localhost:3000/posts/<%= post.id %>">See your post</a>
+                        &nbsp;
+                        <a href="http://localhost:3000/posts/<%= post.id %>/edit">Edit post</a>
+                        &nbsp;
+                        <form style="display: inline;" method="post" action="/posts/<%= post.id %>?_method=DELETE">
+                            <button>Delete Post</button>
+                        </form>
+                    </div>
+                    <% } %>
+                        <% } %>
+    </div>
+
+    <a href="http://localhost:3000/posts/new" class="newCreate">Create a new Post</a>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.post-container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.id {
+    font-size: 14px;
+    color: #888;
+}
+
+.Uname {
+    font-size: 1.8em;
+    color: #e1306c;
+    margin: 10px 0;
+}
+
+.content {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .post-container {
+        padding: 15px;
+    }
+
+    .Uname {
+        font-size: 1.5em;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #e1306c;
+    font-size: 35px;
+    /* Instagram-like color */
+    margin-bottom: 20px;
+}
+
+.post-container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.id {
+    font-size: 14px;
+    color: #888;
+}
+
+.Uname {
+    font-size: 1.8em;
+    color: #e1306c;
+    /* Instagram-like color */
+    margin: 10px 0;
+}
+
+.content {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+a {
+    color: #e1306c;
+    /* Instagram-like color */
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ff1a1a;
+    transform: scale(1.05);
+}
+
+.create-post-link {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #e1306c;
+    /* Instagram-like color */
+    font-weight: bold;
+}
+
+.create-post-link:hover {
+    text-decoration: underline;
+}
+
+.newCreate {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #e1306c;
+    font-size: 30px;
+}
